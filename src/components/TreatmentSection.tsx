@@ -145,29 +145,6 @@ export default function TreatmentSection() {
             </a>
           </div>
         </div>
-
-        <div className="media-section">
-          <div className="section-heading centered reveal is-visible">
-            <p className="eyebrow">{t.mediaEyebrow}</p>
-            <h2>Welcome & Experience</h2>
-            <p className="section-lead">Explore our clinical facilities and peaceful treatment setting.</p>
-          </div>
-          <div className="video-single-grid">
-            <div className="video-placeholder reveal is-visible" style={{ padding: 0, overflow: "hidden", maxHeight: "500px" }}>
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="auto"
-                style={{ width: "100%", height: "100%", minHeight: "420px", objectFit: "cover", display: "block" }}
-                aria-label="Swiss Behavioral Health facilities and treatment environment"
-              >
-                <source src="/assets/videos/installations.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

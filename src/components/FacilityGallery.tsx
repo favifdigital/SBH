@@ -4,63 +4,21 @@ import { useState, useRef, TouchEvent } from "react";
 
 interface Slide {
   id: string;
-  title: string;
-  subtitle: string;
   src?: string;
   isPlaceholder?: boolean;
-  hasSignboard?: boolean;
-  note?: string;
+  alt: string;
 }
 
 const slides: Slide[] = [
   {
-    id: "exterior-grounds",
-    title: "Oldsmar Campus & Grounds",
-    subtitle: "209 State St E, Oldsmar, Florida",
+    id: "exterior-1",
     src: "/assets/images/Around_Recovery.png",
-    hasSignboard: true,
+    alt: "Swiss Behavioral Health campus and grounds",
   },
   {
-    id: "exterior-office",
-    title: "The Oldsmar Exterior Office",
-    subtitle: "Tranquil tree-lined treatment setting beside Philippe Park",
-    src: "/assets/images/oldsmar_exterior_office.jpg",
-    hasSignboard: true,
-  },
-  {
-    id: "group-rooms",
-    title: "The Oldsmar Group Rooms",
-    subtitle: "Intimate circle seating for focused clinical discussions",
-    isPlaceholder: true,
-    note: "Professional photography being prepared",
-  },
-  {
-    id: "individual",
-    title: "Individual Therapy Spaces",
-    subtitle: "Private, sound-insulated clinical consultation suites",
-    isPlaceholder: true,
-    note: "Professional photography being prepared",
-  },
-  {
-    id: "wellness",
-    title: "The Wellness Center",
-    subtitle: "Trauma-informed yoga, breath work, sound healing & meditation",
-    isPlaceholder: true,
-    note: "Professional photography being prepared",
-  },
-  {
-    id: "clinical",
-    title: "Clinical-Office Areas",
-    subtitle: "Dedicated multidisciplinary leadership and medical spaces",
-    isPlaceholder: true,
-    note: "Professional photography being prepared",
-  },
-  {
-    id: "bedroom",
-    title: "Lodging Suite & Private Bath",
-    subtitle: "Comfortable lodging featuring serene Alabaster walls and private en-suite bath",
-    isPlaceholder: true,
-    note: "Alabaster wall finishes currently being applied",
+    id: "exterior-2",
+    src: "/assets/images/oldsmar_building.jpg",
+    alt: "Swiss Behavioral Health facility building and entrance in Oldsmar, Florida",
   },
 ];
 
@@ -84,12 +42,10 @@ export default function FacilityGallery() {
   const handleTouchEnd = () => {
     if (touchStartX.current === null || touchEndX.current === null) return;
     const distance = touchStartX.current - touchEndX.current;
-    const minSwipeDistance = 45;
+    const minSwipeDistance = 40;
     if (distance > minSwipeDistance) {
-      // Swiped left -> next
       next();
     } else if (distance < -minSwipeDistance) {
-      // Swiped right -> prev
       prev();
     }
     touchStartX.current = null;
@@ -111,45 +67,25 @@ export default function FacilityGallery() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={slide.src}
-              alt={`${slide.title} - Swiss Behavioral Health, Oldsmar FL`}
+              alt={slide.alt}
               className="facility-carousel-img"
               loading="lazy"
             />
-            {slide.hasSignboard && (
-              <div className="signboard-badge architectural-signboard" aria-label="Facility entrance signboard">
-                <div className="signboard-brand">
-                  <span className="signboard-dot"></span>
-                  <strong>Swiss Behavioral Health</strong>
-                </div>
-                <span className="signboard-address">209 State St E · Oldsmar, FL</span>
-              </div>
-            )}
           </div>
         ) : (
           <div className="facility-carousel-placeholder">
             <div className="carousel-placeholder-inner">
-              <div className="carousel-placeholder-icon" aria-hidden="true">🌿</div>
-              <h3>{slide.title}</h3>
-              <p>{slide.subtitle}</p>
-              <span className="carousel-pending-tag">{slide.note || "Photo to be uploaded"}</span>
+              <div className="carousel-placeholder-icon" aria-hidden="true">📷</div>
+              <span className="carousel-pending-tag">Photo to be added</span>
             </div>
           </div>
         )}
-
-        <div className="carousel-slide-counter" aria-hidden="true">
-          <span>{current + 1}</span> / {slides.length}
-        </div>
-
-        <div className="carousel-overlay-caption">
-          <h4>{slide.title}</h4>
-          <p>{slide.subtitle}</p>
-        </div>
 
         <button
           type="button"
           className="carousel-btn prev"
           onClick={prev}
-          aria-label="Previous facility photo"
+          aria-label="Previous photo"
         >
           ‹
         </button>
@@ -157,23 +93,25 @@ export default function FacilityGallery() {
           type="button"
           className="carousel-btn next"
           onClick={next}
-          aria-label="Next facility photo"
+          aria-label="Next photo"
         >
           ›
         </button>
       </div>
 
-      <div className="carousel-nav-strip">
+      <div className="carousel-nav-dots" role="tablist" aria-label="Photo slides">
         {slides.map((s, idx) => (
           <button
             key={s.id}
             type="button"
-            className={`carousel-thumb-btn ${idx === current ? "active" : ""}`}
+            className={`carousel-dot-btn ${idx === current ? "active" : ""}`}
             onClick={() => setCurrent(idx)}
-            aria-label={`View ${s.title}`}
+            aria-label={`View photo ${idx + 1}`}
+            aria-selected={idx === current}
+            role="tab"
           >
-            <span className="thumb-idx">0{idx + 1}</span>
-            <span className="thumb-name">{s.title.split(" ")[0]}</span>
+            <span className="dot-pill"></span>
+            <span className="dot-label">0{idx + 1}</span>
           </button>
         ))}
       </div>

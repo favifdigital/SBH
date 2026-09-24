@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import VerifyInsuranceModal from "./VerifyInsuranceModal";
-import ChatWidget from "./ChatWidget";
 
 export default function GlobalModals() {
   const [verifyOpen, setVerifyOpen] = useState(false);
@@ -16,7 +15,6 @@ export default function GlobalModals() {
   return (
     <>
       <VerifyInsuranceModal isOpen={verifyOpen} onClose={() => setVerifyOpen(false)} />
-      <ChatWidget />
     </>
   );
 }

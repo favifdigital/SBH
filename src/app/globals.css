@@ -483,42 +483,44 @@ p{margin:0 0 18px}
 .carousel-btn.prev { left: 16px; }
 .carousel-btn.next { right: 16px; }
 
-.carousel-nav-strip {
+.carousel-nav-dots {
   display: flex;
-  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   padding: 12px 16px;
   background: #f8fafc;
   border-top: 1px solid var(--line);
-  overflow-x: auto;
-  scrollbar-width: thin;
-  -webkit-overflow-scrolling: touch;
 }
-.carousel-thumb-btn {
-  flex: 0 0 auto;
-  padding: 7px 12px;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  font-size: 0.74rem;
-  color: var(--ink);
+.carousel-dot-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 6px;
-  transition: border-color 0.2s, background 0.2s;
-  cursor: pointer;
-  white-space: nowrap;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
 }
-.carousel-thumb-btn.active {
-  border-color: var(--navy);
-  background: var(--navy);
-  color: #fff;
+.carousel-dot-btn .dot-pill {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  transition: all 0.2s ease;
 }
-.thumb-idx {
-  color: var(--seafoam);
-  font-weight: 800;
+.carousel-dot-btn.active {
+  background: rgba(8, 46, 107, 0.08);
+  color: var(--navy);
 }
-.carousel-thumb-btn.active .thumb-idx {
-  color: #a8dadc;
+.carousel-dot-btn.active .dot-pill {
+  width: 24px;
+  border-radius: 999px;
+  background: var(--seafoam);
 }
 
 @media (max-width: 820px) {
