@@ -220,12 +220,27 @@ p{margin:0 0 18px}
     opacity: 1 !important;
     display: block !important;
 }
-/* Título pilares en una sola línea */
+/* Título pilares: una sola línea en desktop amplio, wrap limpio y fluido en móviles */
 .pillars-title-one-line {
-    max-width: none !important;
-    width: 100% !important;
+  max-width: 100% !important;
+  width: auto !important;
+  font-size: clamp(1.8rem, 3.4vw, 3.6rem) !important;
+  line-height: 1.18 !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+}
+
+@media (min-width: 1024px) {
+  .pillars-title-one-line {
     white-space: nowrap !important;
-    font-size: clamp(2.4rem, 4vw, 4.2rem) !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .pillars-title-one-line {
+    white-space: normal !important;
+    font-size: clamp(1.65rem, 5vw, 2.4rem) !important;
+  }
 }
 
 /* Legal & Shared Subpage styles */
