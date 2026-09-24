@@ -83,7 +83,26 @@ export default function AboutSection() {
               <div className="profile-copy">
                 <span>{t.medicalDirector}</span>
                 <h3>Dr. Brian Gadbois, MD</h3>
-                <p>{t.drGadboisBio}</p>
+                <p style={{ whiteSpace: "pre-line" }}>{t.drGadboisBio}</p>
+              </div>
+            </article>
+
+            <article className="profile-card reveal is-visible">
+              <div className="profile-photo media-photo-slot is-loaded">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/images/team/Angela_Turner.png"
+                  alt="Dr. Angela Turner, Ph.D., LMHC, MCAP, Clinical Director at Swiss Behavioral Health"
+                  className="loaded-photo"
+                  onError={(e) => {
+                    e.currentTarget.src = "/assets/images/team/angela-turner.png";
+                  }}
+                />
+              </div>
+              <div className="profile-copy">
+                <span>{t.clinicalDirector || "Clinical Director"}</span>
+                <h3>Dr. Angela Turner, Ph.D., LMHC, MCAP</h3>
+                <p style={{ whiteSpace: "pre-line" }}>{t.angelaTurnerBio}</p>
               </div>
             </article>
 
@@ -97,25 +116,9 @@ export default function AboutSection() {
                 />
               </div>
               <div className="profile-copy">
-                <span>{t.clinicalDirector || "Program Director (MA, MCAP)"}</span>
+                <span>{t.programDirector || "Program Director (MA, MCAP)"}</span>
                 <h3>Jey Roche, MA, MCAP</h3>
-                <p>{t.jeyRocheBio}</p>
-              </div>
-            </article>
-
-            <article className="profile-card reveal is-visible">
-              <div className="profile-photo media-photo-slot is-loaded">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/assets/images/team/Angela_Turner.png"
-                  alt="Dr. Angela Turner, Ph.D., LMHC, MCAP, Clinical Leadership at Swiss Behavioral Health"
-                  className="loaded-photo"
-                />
-              </div>
-              <div className="profile-copy">
-                <span>{t.angelaTurnerRole || "Clinical Leadership"}</span>
-                <h3>Dr. Angela Turner, Ph.D., LMHC, MCAP</h3>
-                <p>{t.angelaTurnerBio}</p>
+                <p style={{ whiteSpace: "pre-line" }}>{t.jeyRocheBio}</p>
               </div>
             </article>
           </div>
