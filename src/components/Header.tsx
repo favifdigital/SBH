@@ -18,7 +18,7 @@ export default function Header() {
       if (e.key === "Escape") setMenuOpen(false);
     };
     const handleResize = () => {
-      if (window.innerWidth > 1200) setMenuOpen(false);
+      if (window.innerWidth > 1240) setMenuOpen(false);
     };
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("resize", handleResize);

@@ -43,7 +43,7 @@ export const THERAPIES: TherapyPageData[] = [
         "Safely process challenging emotions, including anxiety, depression, and anger.",
         "Develop practical coping strategies to manage stress, build emotional resilience, and strengthen self-esteem."
       ],
-      "goal": "Our primary goal is to ensure each individual feels deeply supported throughout their recovery journey while acquiring the practical tools necessary to build a balanced, fulfilling, and meaningful life.",
+      "goal": "Our primary goal is to ensure each individual feels deeply supported throughout their recovery journey while acquiring the practical tools necessary to build a balanced, fulfilling, and meaningful life. All treatment modalities are selected and delivered based on clinical appropriateness, individual treatment plans, and the highest standards of professional credentialing.",
       "admissionsEyebrow": "Admissions",
       "admissionsTitle": "Talk with our team.",
       "admissionsText": "Ask about programs, next steps, and insurance verification.",
@@ -58,7 +58,7 @@ export const THERAPIES: TherapyPageData[] = [
       "documentTitle": "Terapia Individual en Oldsmar, FL | Swiss Behavioral Health",
       "eyebrow": "Tratamiento y Terapias \u00b7 Oldsmar, Florida",
       "heading": "Terapia Individual: El Ancla de Su Recuperaci\u00f3n",
-      "lead": "Atenci\u00f3n en Swiss Behavioral Health en Oldsmar, Florida, para la comunidad de Tampa Bay.",
+      "lead": "En Swiss Behavioral Health, creemos que la verdadera transformaci\u00f3n ocurre cuando el tratamiento se dise\u00f1a alrededor de la persona, no de una plantilla. Al servicio de la comunidad de Tampa Bay, nuestro programa de salud conductual y uso de sustancias se centra en la conexi\u00f3n terap\u00e9utica individual.\n\nCon dos sesiones semanales de terapia individual, usted trabaja directamente con su terapeuta principal para explorar desencadenantes emocionales profundos, construir mecanismos de afrontamiento m\u00e1s saludables y prevenir reca\u00eddas en tiempo real. Nuestra baja proporci\u00f3n de pacientes por terapeuta garantiza un acceso excepcional a su equipo cl\u00ednico, fomentando una relaci\u00f3n de confianza donde florece la verdadera sanaci\u00f3n. Ya sea que enfrente adicci\u00f3n, desaf\u00edos de salud mental o recuperaci\u00f3n de diagn\u00f3stico dual, nuestra terapia individualizada le brinda el tiempo, el espacio y la experiencia cl\u00ednica que necesita para construir una base s\u00f3lida para el futuro.",
       "sectionTitle": "Terapia Individual en Swiss Behavioral Health",
       "intro": "La terapia individual es un espacio \u00edntimo y seguro donde cada persona puede hablar libremente sobre sus pensamientos, emociones y experiencias. Aqu\u00ed, el terapeuta escucha con atenci\u00f3n y sin juicios, ayudando a identificar las dificultades que generan malestar y a encontrar nuevas formas de afrontarlas.",
       "focusTitle": "En estas sesiones, la atenci\u00f3n se adapta cuidadosamente para ayudar a los clientes a:",
@@ -67,7 +67,7 @@ export const THERAPIES: TherapyPageData[] = [
         "Procesar de forma segura emociones dif\u00edciles, incluyendo ansiedad, depresi\u00f3n y enojo.",
         "Desarrollar estrategias pr\u00e1cticas de afrontamiento para manejar el estr\u00e9s, construir resiliencia emocional y fortalecer la autoestima."
       ],
-      "goal": "Nuestro objetivo primordial es asegurar que cada individuo se sienta profundamente apoyado a lo largo de su proceso de recuperaci\u00f3n, adquiriendo las herramientas pr\u00e1cticas necesarias para construir una vida equilibrada, plena y significativa.",
+      "goal": "Nuestro objetivo principal es asegurar que cada individuo se sienta profundamente apoyado a lo largo de su proceso de recuperaci\u00f3n, adquiriendo las herramientas pr\u00e1cticas necesarias para construir una vida equilibrada, plena y significativa. Todas las modalidades de tratamiento se seleccionan y brindan en funci\u00f3n de la idoneidad cl\u00ednica, planes de tratamiento individuales y los m\u00e1s altos est\u00e1ndares de acreditaci\u00f3n profesional.",
       "admissionsEyebrow": "Admisiones",
       "admissionsTitle": "Hable con nuestro equipo.",
       "admissionsText": "Consulte sobre programas, pr\u00f3ximos pasos y verificaci\u00f3n de seguro.",
