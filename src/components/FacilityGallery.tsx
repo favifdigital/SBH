@@ -17,7 +17,7 @@ const slides: Slide[] = [
   },
   {
     id: "exterior-2",
-    src: "/assets/images/oldsmar_building.jpg",
+    src: "/assets/images/Building2.webp",
     alt: "Swiss Behavioral Health facility building and entrance in Oldsmar, Florida",
   },
 ];
