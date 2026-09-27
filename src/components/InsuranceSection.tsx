@@ -17,19 +17,6 @@ export default function InsuranceSection() {
         <div className="section-heading reveal is-visible">
           <p className="eyebrow">{t.insuranceEyebrow}</p>
           <h2 id="insurance-title">{t.insuranceTitle}</h2>
-          <p className="section-lead">{t.insuranceLead}</p>
-          <div className="notice-box">
-            <strong>{t.insuranceSecureTitle}</strong>
-            <p>{t.insuranceSecureText}</p>
-            <button
-              type="button"
-              className="button button-small button-seafoam"
-              style={{ marginTop: "16px" }}
-              onClick={openVerify}
-            >
-              {t.verifyInsurance}
-            </button>
-          </div>
         </div>
 
         <aside className="contact-card reveal is-visible">

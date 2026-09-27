@@ -132,7 +132,7 @@ p{margin:0 0 18px}
 .families-panel{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;margin-top:84px;padding:44px;border-top:1px solid var(--navy);border-bottom:1px solid var(--seafoam);background:#fff}
 .media-section{margin-top:90px}.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.video-placeholder{aspect-ratio:16/9;background:var(--navy);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;color:#fff;box-shadow:var(--shadow)}.video-placeholder strong{font-family:"Times New Roman",Times,serif;font-size:1.35rem}.video-placeholder small{color:rgba(255,255,255,.65)}.play-icon{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--seafoam);color:var(--navy);margin-bottom:18px;padding-left:4px}
 
-.insurance-grid{align-items:start}.notice-box{margin-top:28px;background:var(--gray-soft);border-left:4px solid var(--seafoam);padding:22px}.notice-box strong{color:var(--navy)}.notice-box p{margin:8px 0 0;color:var(--muted)}
+.insurance-grid{align-items:center}.insurance-grid .section-heading{margin-bottom:0}.insurance-grid .section-heading h2{margin-bottom:0}
 .contact-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:var(--shadow)}.contact-card img{width:80px;margin-bottom:22px;opacity:.8}.contact-card .button+.button{margin-top:10px}
 
 .navy h2,.navy h3,.navy .section-lead{color:#fff}.navy .eyebrow{color:#9dc8c7}.light .section-lead{color:rgba(255,255,255,.78)}

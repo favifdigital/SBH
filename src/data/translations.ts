@@ -102,9 +102,6 @@ export interface SiteTranslations {
   videoPending: string;
   insuranceEyebrow: string;
   insuranceTitle: string;
-  insuranceLead: string;
-  insuranceSecureTitle: string;
-  insuranceSecureText: string;
   insuranceHelp: string;
   insuranceHelpText: string;
   callAdmissions: string;
@@ -292,9 +289,6 @@ export const TRANSLATIONS: { en: SiteTranslations; es: SiteTranslations } = {
     "videoPending": "Video URL pending",
     "insuranceEyebrow": "Insurance & Payment",
     "insuranceTitle": "Understand Your Options Before Treatment Begins",
-    "insuranceLead": "Coverage and payment questions should be handled clearly and confidentially. SBH can discuss insurance verification and private-pay options when applicable.",
-    "insuranceSecureTitle": "Secure verification workflow",
-    "insuranceSecureText": "The final Verify Insurance button should connect only to an SBH-approved secure verification process. No insurance or sensitive health information is collected by this prototype.",
     "insuranceHelp": "Need help with insurance or payment questions?",
     "insuranceHelpText": "Speak directly with Admissions for the most current information.",
     "callAdmissions": "Call Admissions",
@@ -461,9 +455,6 @@ export const TRANSLATIONS: { en: SiteTranslations; es: SiteTranslations } = {
     "videoPending": "URL de video pendiente",
     "insuranceEyebrow": "Seguro y Pagos",
     "insuranceTitle": "Conozca Sus Opciones Antes de Iniciar el Tratamiento",
-    "insuranceLead": "Las preguntas sobre cobertura y pagos deben manejarse de manera clara y confidencial. SBH puede conversar sobre verificaci\u00f3n de seguro y opciones de pago privado cuando correspondan.",
-    "insuranceSecureTitle": "Proceso seguro de verificaci\u00f3n",
-    "insuranceSecureText": "El bot\u00f3n final de Verificar Seguro debe conectarse \u00fanicamente con un proceso seguro aprobado por SBH. Este prototipo no recopila informaci\u00f3n de seguro ni informaci\u00f3n m\u00e9dica sensible.",
     "insuranceHelp": "\u00bfNecesita ayuda con preguntas sobre seguro o pagos?",
     "insuranceHelpText": "Hable directamente con Admisiones para obtener la informaci\u00f3n m\u00e1s actualizada.",
     "callAdmissions": "Llamar a Admisiones",
