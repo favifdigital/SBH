@@ -46,6 +46,12 @@ export default function Header() {
 
   return (
     <header className="site-header" id="top">
+      <div className="top-disclaimer-bar" role="region" aria-label="Licensure Disclaimer">
+        <div className="shell top-disclaimer-inner">
+          <span className="top-disclaimer-badge">{t.disclaimerBadge}</span>
+          <span className="top-disclaimer-text">{t.dcfDisclaimer}</span>
+        </div>
+      </div>
       <div className="header-inner shell">
         <Link
           className="brand-link"

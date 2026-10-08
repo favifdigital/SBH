@@ -163,6 +163,8 @@ export interface SiteTranslations {
   backTop: string;
   insurancePending: string;
   socialPending: string;
+  disclaimerBadge: string;
+  dcfDisclaimer: string;
 }
 
 export const CONFIG = {
@@ -349,7 +351,9 @@ export const TRANSLATIONS: { en: SiteTranslations; es: SiteTranslations } = {
     "rightsReserved": "All rights reserved.",
     "backTop": "Back to top \u2191",
     "insurancePending": "Secure insurance verification is pending final SBH setup. Please contact Admissions for assistance.",
-    "socialPending": "Social media link pending final SBH URL."
+    "socialPending": "Social media link pending final SBH URL.",
+    "disclaimerBadge": "Notice",
+    "dcfDisclaimer": "Coming Soon Pending DCF Licensure"
   },
   "es": {
     "skipToContent": "Ir al contenido",
@@ -515,6 +519,8 @@ export const TRANSLATIONS: { en: SiteTranslations; es: SiteTranslations } = {
     "rightsReserved": "Todos los derechos reservados.",
     "backTop": "Volver arriba \u2191",
     "insurancePending": "La verificaci\u00f3n segura de seguro est\u00e1 pendiente de la configuraci\u00f3n final de SBH. Comun\u00edquese con Admisiones para recibir ayuda.",
-    "socialPending": "Enlace de red social pendiente de la URL final de SBH."
+    "socialPending": "Enlace de red social pendiente de la URL final de SBH.",
+    "disclaimerBadge": "Aviso",
+    "dcfDisclaimer": "Próximamente · Pendiente de Licencia del DCF"
   }
 };
