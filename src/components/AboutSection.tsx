@@ -64,6 +64,11 @@ export default function AboutSection() {
           </article>
         </div>
 
+        {/*
+          "Meet the Leadership" section - temporarily hidden per request.
+          To re-enable, uncomment the block below.
+        */}
+        {/*
         <div className="team-block">
           <div className="section-heading reveal is-visible">
             <p className="eyebrow">{t.teamEyebrow}</p>
@@ -73,7 +78,6 @@ export default function AboutSection() {
           <div className="cards team-cards team-cards-3">
             <article className="profile-card reveal is-visible">
               <div className="profile-photo media-photo-slot is-loaded">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/assets/images/team/Medical_Director.png"
                   alt="Dr. Brian Gadbois, MD, Medical Director at Swiss Behavioral Health in Oldsmar, Florida"
@@ -89,7 +93,6 @@ export default function AboutSection() {
 
             <article className="profile-card reveal is-visible">
               <div className="profile-photo media-photo-slot is-loaded">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/assets/images/team/Angela_Turner.png"
                   alt="Dr. Angela Turner, Ph.D., LMHC, MCAP, Clinical Director at Swiss Behavioral Health"
@@ -108,7 +111,6 @@ export default function AboutSection() {
 
             <article className="profile-card reveal is-visible">
               <div className="profile-photo media-photo-slot is-loaded">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/assets/images/team/Director_Program.png"
                   alt="Jey Roche, MA, MCAP, Program Director at Swiss Behavioral Health in Oldsmar, Florida"
@@ -123,6 +125,7 @@ export default function AboutSection() {
             </article>
           </div>
         </div>
+        */}
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+// import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/context/LanguageContext";
 import { CONFIG } from "@/data/translations";
@@ -43,13 +43,16 @@ export default function Footer() {
           </span>
         </div>
 
-        <div className="footer-col">
-          <h3>{t.footerLegal}</h3>
-          <Link href="/legal/privacy">{t.privacyPolicy}</Link>
-          <Link href="/legal/terms">{t.termsDisclaimer}</Link>
-          <Link href="/legal/accessibility">{t.accessibility}</Link>
-          <Link href="/legal/npp">{t.privacyPractices}</Link>
-        </div>
+        {/*
+          Legal section - temporarily removed per request; to be developed later.
+          <div className="footer-col">
+            <h3>{t.footerLegal}</h3>
+            <Link href="/legal/privacy">{t.privacyPolicy}</Link>
+            <Link href="/legal/terms">{t.termsDisclaimer}</Link>
+            <Link href="/legal/accessibility">{t.accessibility}</Link>
+            <Link href="/legal/npp">{t.privacyPractices}</Link>
+          </div>
+        */}
       </div>
 
       <div className="shell footer-bottom">

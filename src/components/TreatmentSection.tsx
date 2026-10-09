@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
-import FacilityGallery from "./FacilityGallery";
+// import FacilityGallery from "./FacilityGallery";
 
 export default function TreatmentSection() {
   const { t } = useLanguage();
@@ -76,6 +76,11 @@ export default function TreatmentSection() {
           </div>
         </div>
 
+        {/*
+          Harbor environment & Safety Harbor supportive lodging sections - temporarily hidden per request.
+          To re-enable, uncomment the blocks below and re-enable the FacilityGallery import above.
+        */}
+        {/*
         <div className="experience-grid">
           <article className="experience-copy reveal is-visible">
             <p className="eyebrow">{t.settingEyebrow}</p>
@@ -132,6 +137,7 @@ export default function TreatmentSection() {
             </a>
           </article>
         </div>
+        */}
 
         <div className="families-panel reveal is-visible">
           <div>
